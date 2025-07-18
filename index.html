@@ -1,0 +1,111 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>hello</title>
+          <script src="https://cdn.tailwindcss.com"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+          <style>
+            img.profile-pic { max-width: 150px; max-height: 150px; object-fit: cover; }
+            img.project-img { max-width: 300px; max-height: 200px; object-fit: cover; }
+            img.certificate-img { max-width: 400px; max-height: 250px; object-fit: contain; }
+            body { background: linear-gradient(to bottom right, #f9fafb, #e5e7eb); }
+            @media (prefers-color-scheme: dark) {
+              body { background: linear-gradient(to bottom right, #1f2937, #374151); }
+            }
+          </style>
+        </head>
+        <body>
+          <div class="min-h-screen bg-gray-900 text-white font-mono"><style>
+          @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+          }
+          .brutalist-border {
+            border: 4px solid #fff;
+            box-shadow: 8px 8px 0 #ff0000;
+          }
+          .hover-shift {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+          }
+          .hover-shift:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0 #ff0000;
+          }
+          .text-glow {
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+          }
+          .brutalist-button {
+            background: #ff0000;
+            color: #fff;
+            border: 3px solid #fff;
+            transition: all 0.2s ease;
+          }
+          .brutalist-button:hover {
+            background: #fff;
+            color: #ff0000;
+            transform: translate(-2px, -2px);
+          }
+        </style><header class="bg-black text-white py-4 sticky top-0 z-50 brutalist-border"><div class="container mx-auto px-4 flex justify-between items-center"><h1 class="text-4xl font-black uppercase text-glow">hello</h1><button id="menu-toggle" class="sm:hidden text-white focus:outline-none p-2 brutalist-button" aria-label="Open menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path id="menu-icon" stroke-linecap="square" stroke-linejoin="miter" stroke-width="3" d="M4 6h16M4 12h16M4 18h16"></path></svg></button><nav class="hidden sm:flex sm:flex-row sm:space-x-6"><a href="#profile" class="text-lg font-black uppercase hover:text-red-500 hover-shift">About</a><a href="#skills" class="text-lg font-black uppercase hover:text-red-500 hover-shift">Skills</a><a href="#projects" class="text-lg font-black uppercase hover:text-red-500 hover-shift">Projects</a><a href="#certificates" class="text-lg font-black uppercase hover:text-red-500 hover-shift">Certificates</a><a href="#resume" class="text-lg font-black uppercase hover:text-red-500 hover-shift">Resume</a><a href="#contact" class="text-lg font-black uppercase hover:text-red-500 hover-shift">Contact</a></nav></div><div id="mobile-menu" class="sm:hidden bg-black text-white flex-col space-y-2 px-4 py-4 absolute top-full left-0 right-0 z-40 brutalist-border hidden transition-all duration-300 ease-in-out"><a href="#profile" class="text-lg font-black uppercase hover:text-red-500 hover-shift py-2">About</a><a href="#skills" class="text-lg font-black uppercase hover:text-red-500 hover-shift py-2">Skills</a><a href="#projects" class="text-lg font-black uppercase hover:text-red-500 hover-shift py-2">Projects</a><a href="#certificates" class="text-lg font-black uppercase hover:text-red-500 hover-shift py-2">Certificates</a><a href="#resume" class="text-lg font-black uppercase hover:text-red-500 hover-shift py-2">Resume</a><a href="#contact" class="text-lg font-black uppercase hover:text-red-500 hover-shift py-2">Contact</a></div></header><main class="container mx-auto px-4 py-12"><section id="profile" class="mb-16 scroll-mt-24"><div class="bg-gray-800 p-8 brutalist-border hover-shift"><h2 class="text-5xl font-black uppercase mb-8 text-center text-glow">About Me</h2><div class="flex flex-col md:flex-row items-center gap-8"><div class="w-48 h-48 bg-gray-800 flex items-center justify-center text-white font-black uppercase brutalist-border">No Image</div><div class="text-center md:text-left"><h3 class="text-3xl font-black uppercase mb-4 text-glow">hello</h3><p class="mb-6 text-gray-300 leading-relaxed">bio</p><div class="flex flex-col md:flex-row md:space-x-6 space-y-3 md:space-y-0"><p><strong class="text-red-500 font-black">Email:</strong> <a href="mailto:dussauday469@gmail.com" class="text-white hover:text-red-500">dussauday469@gmail.com</a></p><p><strong class="text-red-500 font-black">WhatsApp:</strong> <a href="https://wa.me/+916304478845" target="_blank" rel="noopener noreferrer" class="text-white hover:text-red-500">Contact via WhatsApp</a></p></div></div></div></div></section><section id="skills" class="mb-16 scroll-mt-24"><div class="bg-gray-800 p-8 brutalist-border hover-shift"><h2 class="text-5xl font-black uppercase mb-8 text-center text-glow">Skills</h2><div class="flex flex-wrap justify-center gap-4"><p class="text-center text-gray-300">No skills listed.</p></div></div></section><section id="projects" class="mb-16 scroll-mt-24"><div class="bg-gray-800 p-8 brutalist-border hover-shift"><h2 class="text-5xl font-black uppercase mb-8 text-center text-glow">Projects</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-8"><p class="text-center text-gray-300 col-span-full">No projects listed.</p></div></div></section><section id="certificates" class="mb-16 scroll-mt-24"><div class="bg-gray-800 p-8 brutalist-border hover-shift"><h2 class="text-5xl font-black uppercase mb-8 text-center text-glow">Certificates</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-8"><p class="text-center text-gray-300 col-span-full">No certificates listed.</p></div></div></section><section id="resume" class="mb-16 scroll-mt-24"><div class="bg-gray-800 p-8 brutalist-border hover-shift text-center"><h2 class="text-5xl font-black uppercase mb-8 text-glow">Resume</h2><p class="text-gray-300">No resume uploaded.</p></div></section><section id="contact" class="mb-16 scroll-mt-24"><div class="bg-gray-800 p-8 brutalist-border hover-shift text-center"><h2 class="text-5xl font-black uppercase mb-8 text-glow">Contact Me</h2><div class="flex justify-center space-x-8 mb-8"><a href="mailto:dussauday469@gmail.com" class="text-red-500 hover:text-white hover-shift"><svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="3" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></a></div><p class="text-gray-300">Reach out for opportunities or collaborations.</p></div></section></main><footer class="bg-black text-white py-6 border-t-4 border-white"><div class="container mx-auto px-4 text-center"><p class="font-black uppercase">© <a href="https://tinyurl.com/DevCraftwebsite">Made by DevCraftz  </a> <!-- -->2025<!-- --> <!-- -->hello</p></div></footer></div>
+          
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          // ... (existing client script)
+        });
+      </script>
+      <style>
+        :root {
+          --primary: #6B46C1;
+          --secondary: #DB2777;
+          --bg: #F9FAFB;
+          --text: #1F2937;
+          --font: sans-serif;
+          --rounded: 0.5rem;
+          --section-padding: 4rem;
+          --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        @keyframes float {
+          0% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+          100% { transform: translateY(0px); }
+        }
+        @keyframes pulse {
+          0% { transform: scale(1); }
+          50% { transform: scale(1.05); }
+          100% { transform: scale(1); }
+        }
+        @keyframes bounce {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-10px); }
+        }
+        
+        .custom-animation {
+          animation: float 3s ease-in-out infinite;
+        }
+        
+        .hover-effect {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-effect:hover {
+          transform: scale(1.03);
+          
+          
+        }
+        
+        .gradient-text {
+          background: linear-gradient(45deg, var(--primary), var(--secondary));
+          background-size: 200% auto;
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          animation: gradient-shift 3s linear infinite;
+        }
+      </style>
+    
+        </body>
+        </html>
+      
